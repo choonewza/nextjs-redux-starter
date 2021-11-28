@@ -1,16 +1,15 @@
 import {
-  INCREMENT_COUNTER,
-  DECREMENT_COUNTER,
+  Types
 } from "../actions/counterActions";
 
 const counterReducer = (state = { value: 0 }, action) => {
   switch (action.type) {
-    case INCREMENT_COUNTER:
+    case Types.INCREMENT_COUNTER:
       return {
         ...state,
         value: state.value + 1,
       };
-    case DECREMENT_COUNTER:
+    case Types.DECREMENT_COUNTER:
       return {
         ...state,
         value: state.value - 1,

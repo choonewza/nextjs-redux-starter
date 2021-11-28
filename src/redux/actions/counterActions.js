@@ -1,11 +1,13 @@
-// Notify type
-export const INCREMENT_COUNTER = "INCREMENT_COUNTER";
-export const DECREMENT_COUNTER = "DECREMENT_COUNTER";
+// Couter types
+export const Types={
+  INCREMENT_COUNTER:"INCREMENT_COUNTER",
+  DECREMENT_COUNTER:"DECREMENT_COUNTER"
+}
 
 export const incrementCounter = () => ({
-  type: INCREMENT_COUNTER,
+  type: Types.INCREMENT_COUNTER,
 });
 
 export const decrementCounter = () => ({
-  type: DECREMENT_COUNTER,
+  type: Types.DECREMENT_COUNTER,
 });
